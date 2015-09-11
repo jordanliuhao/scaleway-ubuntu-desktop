@@ -1,5 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-app-ubuntudesktop
+NAME =			ubuntudesktop
 VERSION =		latest
 VERSION_ALIASES =	vivid 15.04
 TITLE =			Ubuntu Desktop

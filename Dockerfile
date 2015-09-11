@@ -1,5 +1,5 @@
-## -*- docker-image-name: "armbuild/scw-app-ubuntudesktop:vivid" -*-
-FROM armbuild/scw-distrib-ubuntu:vivid
+## -*- docker-image-name: "scaleway/ubuntudesktop:vivid" -*-
+FROM scaleway/ubuntu:vivid
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
