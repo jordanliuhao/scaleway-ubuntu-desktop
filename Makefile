@@ -1,10 +1,9 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-app-ubuntudesktop
+NAME =			ubuntudesktop
 VERSION =		latest
 VERSION_ALIASES =	vivid 15.04
 TITLE =			Ubuntu Desktop
 DESCRIPTION =		Ubuntu Desktop
-SOURCE_URL =		https://github.com/scaleway/image-app-ubuntudesktop
+SOURCE_URL =		https://github.com/scaleway-community/scaleway-ubuntudesktop
 VENDOR_URL =		http://www.ubuntu.com/download/desktop
 
 IMAGE_VOLUME_SIZE =	50G
