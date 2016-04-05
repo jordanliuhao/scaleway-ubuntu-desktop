@@ -17,5 +17,4 @@ fi
 
 (killall x11vnc; sleep 1; killall -9 x11vnc) || true
 su - ubuntu -c sh -c 'x11vnc -forever -bg' &
-
-# TODO: add NOVNC
+websockify -D --web /usr/share/novnc 80 127.0.0.1:5900
