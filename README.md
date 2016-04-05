@@ -20,4 +20,4 @@ We use the Docker's building system and convert it at the end to a disk image th
 
 ---
 
-A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)# Official Ubuntu Desktop image on Scaleway
+A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)
