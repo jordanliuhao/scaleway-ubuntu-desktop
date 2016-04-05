@@ -15,7 +15,7 @@ if [ ! -f /home/$DESKTOP_USER/.vncpasswd ]; then
     # x11vnc -storepasswd "$PASS" /root/.vncpasswd
 fi
 
-killall x11vnc; sleep 1; killall -9 x11vnc
+(killall x11vnc; sleep 1; killall -9 x11vnc) || true
 su - ubuntu -c sh -c 'x11vnc -forever -bg' &
 
 # TODO: add NOVNC
