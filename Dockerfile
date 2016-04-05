@@ -23,6 +23,7 @@ RUN apt-get -q update \
         gtk2-engines-murrine \
         lxde-core \
         lxterminal \
+        novnc \
         pwgen \
         tightvncserver \
         ttf-ubuntu-font-family \
