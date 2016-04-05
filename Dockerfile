@@ -1,10 +1,18 @@
 ## -*- docker-image-name: "scaleway/ubuntudesktop:vivid" -*-
-FROM scaleway/ubuntu:vivid
+FROM scaleway/ubuntu:amd64-trusty
+# following 'FROM' lines are used dynamically thanks do the image-builder
+# which dynamically update the Dockerfile if needed.
+#FROM scaleway/ubuntu:armhf-trusty       # arch=armv7l
+#FROM scaleway/ubuntu:arm64-trusty       # arch=arm64
+#FROM scaleway/ubuntu:i386-trusty        # arch=i386
+#FROM scaleway/ubuntu:mips-trusty        # arch=mips
+
+
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
 # Prepare rootfs for image-builder
-RUN /usr/local/sbin/builder-enter
+RUN /usr/local/sbin/scw-builder-enter
 
 
 # Install packages
@@ -25,11 +33,8 @@ RUN apt-get -q update \
 
 
 # Patch rootfs
-ADD ./patches/etc/ /etc/
-ADD ./patches/usr/ /usr/
-#ADD ./patches/root/ /root/
-ADD ./patches/home/ /home/
+COPY ./overlay/ /
 
 
 # Clean rootfs from image-builder
-RUN /usr/local/sbin/builder-leave
+RUN /usr/local/sbin/scw-builder-leave
