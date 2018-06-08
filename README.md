@@ -9,10 +9,10 @@ Launch your Ubuntu Desktop servers on Scaleway in minutes.
 <img src="http://upload.wikimedia.org/wikipedia/commons/4/4d/Ubuntu_15.04.png" width="500px" />
 
 ---
-git clone https://github.com/scaleway/image-tools.git
-git clone https://github.com/jordanliuhao/scaleway-ubuntu-desktop.git
-cd image-tools
-mktemp -d
-make IMAGE_DIR=../scaleway-ubuntu-desktop EXPORT_DIR=/tmp/tmp.81ypngKpTC scaleway_image
+git clone https://github.com/scaleway/image-tools.git <br>
+git clone https://github.com/jordanliuhao/scaleway-ubuntu-desktop.git <br>
+cd image-tools <br>
+mktemp -d <br>
+make IMAGE_DIR=../scaleway-ubuntu-desktop EXPORT_DIR=/tmp/tmp.81ypngKpTC scaleway_image <br>
 
 
